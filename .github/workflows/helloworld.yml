@@ -34,3 +34,30 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  specificrunner:
+    runs-on: rnd.githubactions-runner
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+
+  Linux:
+    runs-on: Linux
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
