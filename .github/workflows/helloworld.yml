@@ -35,8 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-  specificrunner:
-    runs-on: rnd.githubactions-runner
+  X64:
+    runs-on: X64
     steps:
       - uses: actions/checkout@v4
       
